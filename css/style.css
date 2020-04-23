@@ -7,7 +7,19 @@
   content: "";
   clear: both;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+header {
+  height: 160px;
+}
+.navigation {
+  padding-top: 30px;
+}
 .navigation a {
+  float: left;
   text-decoration: none;
 }
 .logo {
@@ -18,12 +30,17 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #555252;
+  margin: 0px;
 }
 .logo::first-letter {
   color: #1abc9c;
   font-weight: 900;
 }
 .navigation-list {
+  float: right;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   text-transform: uppercase;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -32,9 +49,180 @@
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+.navigation-list-item {
+  float: left;
+  margin-top: 10px;
+  margin-right: 33px;
+}
 .navigation-list a {
   color: #0f0101;
 }
 .navigation-list-item:first-of-type a {
   color: #1abc9c;
+}
+.navigation-list-item:last-of-type {
+  margin-right: 0px;
+}
+.shop-title {
+  width: 480px;
+  margin: 0 auto;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #515151;
+}
+.shop-title::after {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  padding-top: 34px;
+  padding-bottom: 94px;
+
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  background-clip: content-box;
+}
+.shop-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product-card {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 0px;
+  height: 322px;
+  width: 255px;
+}
+.product-card:nth-of-type(4n) {
+  margin-right: 0;
+}
+.product-card:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
+}
+.product-card a {
+  text-decoration: none;
+}
+.product-card img {
+  background-color: #e9f0fd;
+}
+.product-card-title,
+.product-card-price {
+  display: inline-block;
+  margin: 0;
+  height: 40px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.product-card-title {
+  width: 200px;
+  text-indent: 13px;
+  background-color: #323232;
+}
+.product-card-price {
+  text-align: center;
+  width: 55px;
+  background-color: rgba(50, 50, 50, 0.44);
+}
+.product-card-price::before {
+  content: "\0024";
+}
+.product-card:hover .product-card-title {
+  background-color: #1abc9c;
+}
+.product-card:hover .product-card-price {
+  background-color: rgba(26, 188, 156, 0.44);
+}
+.blog-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 104px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #555252;
+}
+.blog-title::after {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  padding-top: 35px;
+  padding-bottom: 80px;
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  background-clip: content-box;
+}
+.blog-unit {
+  width: 350px;
+  float: left;
+  font-size: 0px;
+  margin-right: 30px;
+}
+.blog-unit:last-of-type {
+  margin-right: 0px;
+}
+.blog-unit img {
+  margin-bottom: 5px;
+}
+.blog-header,
+.blog-txt,
+.blog-unit a {
+  margin: 0px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+}
+.blog-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555252;
+  letter-spacing: -0.02em;
+  height: 72px;
+}
+.blog-header::after {
+  content: "";
+  display: block;
+  padding-top: 10px;
+  height: 3px;
+  width: 136px;
+  background-color: #4ec6ab;
+  background-clip: content-box;
+}
+.blog-txt {
+  padding-top: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555252;
+  letter-spacing: -0.02em;
+  margin-bottom: 13px;
+}
+.blog-unit a {
+  display: block;
+  width: 160px;
+  height: 51px;
+  line-height: 51px;
+  background-color: #4ec6ab;
+  border: hidden;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: -0.02em;
 }
